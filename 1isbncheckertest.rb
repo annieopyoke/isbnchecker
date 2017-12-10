@@ -36,7 +36,7 @@ class Test1isbnchecker < Minitest::Test
 	end
 
 	def test_assert_that_9780754823902_is_a_valid_isbn
-		isbn_num = 9780754823
+		isbn_num =  1613827237
 		assert_equal(true, array_set(isbn_num))
 	end
 
