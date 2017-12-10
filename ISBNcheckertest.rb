@@ -30,12 +30,10 @@ class Testisbnchecker < Minitest::Test
 		isbn_num = 3456724987567
 		assert_equal(true, check_isbn(isbn_num))
 	end
-	def test_assert_that_isbn_is_an_integer
-		assert_equal(false, check_isbn("wombat"))
-	end
-
+	
 	def test_assert_that_wombat_is_not_an_integer
-		assert_equal(false,check_isbn("wombat"))
+		isbn_num = "wombat"
+		assert_equal(false,check_isbn(isbn_num))
 	end
 
 end

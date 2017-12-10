@@ -1,15 +1,18 @@
 def check_isbn(isbn_num)
     isbn_ar = isbn_num.to_s.split('')
     if isbn_ar.length == 10 || isbn_ar.length == 13
-        true
-        isbn_ar.to_i
+        true  
     else
     false
     end 
-
-if isbn_num = Integer
+end
+ def integer_set(isbn_num)
+  isbn_num.to_i
+end
+def array_set(isbn_num)
+	if isbn_num == Integer
     true
-    isbn_ar.to_s
+    isbn_num.to_a = isbn_num.to_s.split('')
 else
     false
 end
@@ -62,3 +65,4 @@ elsif isbn_ar.length == 13
  end
 end
 end
+
