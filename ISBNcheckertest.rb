@@ -15,4 +15,8 @@ class Testisbnchecker < Minitest::Test
 		isbn = 3456724987
 		assert_equal(true, check_isbn(isbn_num))
 end
+	def assert_test_that_13_digits_are_true
+		isbn = 3456724987567
+		assert_equal(true, check_isbn(isbn_num))
+	end
 end
