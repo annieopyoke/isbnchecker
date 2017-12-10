@@ -7,9 +7,13 @@ def check_isbn(isbn_num)
     false
     end 
 end
-#  def integer_set(isbn_num)
-#   isbn_num.to_i
-# end
+ def integer_set(isbn_num)
+  if isbn_num.class == Integer
+  	true
+  else
+  	false
+end
+end
 # def array_set(isbn_num)
 # 	if isbn_num == Integer
 #     true
