@@ -5,15 +5,13 @@ def check_isbn(isbn_num)
         isbn_ar.to_i
     else
     false
-    end 
-
+    end
 if isbn_num = Integer
     true
     isbn_ar.to_s
 else
     false
 end
-
 if isbn_ar.length == 10
     pos1 = isbn_num(0) * 10
     pos2 = isbn_num(1) * 9
@@ -35,7 +33,7 @@ elsif isbn_ar.length == 13
     pos7 = isbn_num(6) * 1
     pos8 = isbn_num(7) * 3
     pos9 = isbn_num(8) * 1
-    pos10 = isbn_num(9) * 3
+    pos10 = isbn_nu(9) * 3
     pos11 = isbn_num(10) * 1
     pos12 = isbn_num(11) * 3
     pos13 = isbn_num(12) * 1
@@ -43,22 +41,17 @@ elsif isbn_ar.length == 13
 
 if isbn_ar.length == 10
     sum = pos1 + pos2 + pos1 + pos3 + pos4 + pos5 +pos6 + pos7 + pos8 + pos9 + pos10
-    if sum % 11 == 0
+    if sum % 11
         true
-        puts "10 true"
     else
         false
-        puts "1 false"
     end
 elsif isbn_ar.length == 13
     sum = pos1 + pos2 + pos1 + pos3 + pos4 + pos5 +pos6 + pos7 + pos8 + pos9 + pos10 + pos11 +pos12 + pos13
-    if sum % 10 == 0
+    if sum % 10
         true
-        puts "13 true"
     else 
         false
-        puts "13 false"
-
  end
 end
 end
